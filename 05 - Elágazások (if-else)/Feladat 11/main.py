@@ -9,11 +9,17 @@ number = int(input())
 
 system('cls')
 
-if 0 < number and number % 2 == 0 and number % 5 == 0:
-    print("A szám pozitív, páros, és osztható 5-el.")
-elif 0 < number:
-    print("A szám pozitív és páros")
-elif 0 < number and number % 2 != 0 and number % 5 == 0:
-    print("A szám pozitív, páratlan, és osztható öttel.")
-elif 0 < number and number % 2 != 0 and number % 5 != 0: 
-    print("A szám pozitív, páratlan, és nem osztható öttel")
+if (0 < number):
+    print("A szám pozitív")
+else:
+    print("A szám negatív")
+
+if (number % 2) == 0:
+    print("A szám páros")
+else:
+    print("A szám páratlan")
+
+if (number % 5) == 0:
+    print("A szám oszható öttel.")
+else:
+    print("A szám nem osztható öttel.")
