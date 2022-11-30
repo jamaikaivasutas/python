@@ -1,6 +1,6 @@
 from os import *
 
-whatDay: int(input("Hanyadik napja van a hétnek? "))
+whatDay = input("Hányadik napja van a hétnek? ")
 
 match whatDay:
     case "1":
