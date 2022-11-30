@@ -85,4 +85,4 @@ isThereMainCourse = (chickenThigh or chickenBreast or vegetableGratin or spagett
 isThereASideDish = (rice or steamedVegetables or fruit or frenchFries or salad or cola)
     
 if (isThereAppetizer or isThereMainCourse or isThereASideDish):
-    if ()
+    print("XD KD XD KXD ")
