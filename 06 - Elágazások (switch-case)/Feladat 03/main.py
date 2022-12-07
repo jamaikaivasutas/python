@@ -1,6 +1,9 @@
 from os import *
 
-whichSoda: input("Melyik üdítőt választja? \n 1 - Coca Cola \n 2 - Pepsi \n 3 - Fanta \n 4 - Sprite \n ")
+whichSoda: str = None
+
+print("Melyik üdítőt választja? \n 1 - Coca Cola \n 2 - Pepsi \n 3 - Fanta \n 4 - Sprite \n ", end="")
+whichSoda = input()
 
 match whichSoda: 
     case "1":

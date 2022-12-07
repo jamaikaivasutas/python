@@ -12,12 +12,12 @@ solution: int = None
 choice = input("Melyiket szeretné kiszámítani? \n terület [t] \n kerület [k] \n átló [a] \n ")
 
 match choice:
-    case "k" :
+    case "k" | "K":
         solution = 2 * (length + width)
         print(f"A téglalap kerülete {solution}")
-    case "t" :
+    case "t" | "T":
         solution = length * width
         print(f"A téglalap területe {solution}")
-    case "a" :
+    case "a" | "A" :
         solution = math.sqrt(math.pow(length , 2) + math.pow(width , 2))
         print(f"A téglalap átlója {solution}")
