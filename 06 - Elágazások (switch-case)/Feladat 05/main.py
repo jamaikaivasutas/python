@@ -2,15 +2,14 @@ from os import *
 
 resistor1: int = None
 resistor2: int = None
+serial: int = None
+parallel: int = None
 
 print("Kérem az első ellenállást!")
 resistor1 = int(input())
 
 print("Kérem a második ellenállást!")
 resistor2 = int(input())
-
-serial: int = None
-parallel: int = None
 
 solution = input("Hogyan van kapcsolva az áramköre? \n  Párhuzamosan [p,P]  \n Sorosan [s,S] \n ")
 
