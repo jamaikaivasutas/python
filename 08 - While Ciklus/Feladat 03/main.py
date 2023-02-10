@@ -13,4 +13,7 @@ while (userGuess != randomNumber and count < 5):
         print("Sikeresen kitalálta a számot!")
     else:
         print("Sajnos nem sikerült, próbálja újra")
+        if count >= 5:
+            print("Elérte az 5 próbálkozást, nem próbálkozhat többször!")
+
 
