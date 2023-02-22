@@ -4,6 +4,9 @@ userNumberInput: int = 0
 userMaxNumber: int = 0
 userNumberSum: int = 0
 inputSum: int = 0
+temp: str = None
+isNumber: bool = False
+truncatedString: str = None
 
 
 print("Kérem adjon meg egy határértéket!")
@@ -13,7 +16,12 @@ while (userNumberSum < userMaxNumber):
     inputSum = inputSum + 1
 
     print("Mennyit szeretne hozzáadni az értékéhez?")
-    userNumberInput = int(input())
+    temp = input()
+    truncatedString = temp.replace(".","").replace("-","")
+    isNumber = truncatedString.isnumeric()
+
+    if (isNumber) :
+        userNumberInput = int(temp) 
 
     userNumberSum = userNumberSum + userNumberInput
 

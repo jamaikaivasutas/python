@@ -1,10 +1,18 @@
 from os import *
 
 userNumberInput: int = 0
+temp: str = None
+isNumber: bool = False
+truncatedString: str = None
 
 while userNumberInput <= 99:
     print("Kérem adjon meg egy háromjegyű számot!")
-    userNumberInput = int(input())
+    temp = input()
+    truncatedString = temp.replace(".","").replace("-","")
+    isNumber = truncatedString.isnumeric()
+
+    if (isNumber) :
+        userNumberInput = int(temp) 
 
     if userNumberInput <= 99:
         print("A szám amit megadott nem háromjegyű! Próbálkozzon újra!")

@@ -2,9 +2,18 @@ from os import *
 
 userMoneyOriginal: int = 0
 count: int = 0
+userMoney: int = 0
+temp: str = None
+isNumber: bool = False
+truncatedString: str = None
 
 print("Mennyi pénze van önnek?")
-userMoneyOriginal = int(input())
+temp = input()
+truncatedString = temp.replace(".","").replace("-","")
+isNumber = truncatedString.isnumeric()
+
+if (isNumber) :
+    userMoneyOriginal = float(temp) 
 
 userMoney = userMoneyOriginal
 
