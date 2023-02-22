@@ -5,7 +5,7 @@ temp: str = None
 isNumber: bool = False
 truncatedString: str = None
 
-while userNumberInput <= 99:
+while (userNumberInput <= 99):
     print("Kérem adjon meg egy háromjegyű számot!")
     temp = input()
     truncatedString = temp.replace(".","").replace("-","")

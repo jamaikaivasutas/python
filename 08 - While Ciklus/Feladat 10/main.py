@@ -5,7 +5,7 @@ temp: str = None
 isNumber: bool = False
 truncatedString: str = None
 
-while userInputNumber == None or userInputNumber > 99:
+while userInputNumber == None or userInputNumber > 99 and userInputNumber % 2 != 0:
     print("Kérem adjon meg egy számot! (Maximum kétjegyű lehet)")
     temp = input()
     truncatedString = temp.replace(".","").replace("-","")
