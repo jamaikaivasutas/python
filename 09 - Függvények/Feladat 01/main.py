@@ -13,18 +13,14 @@ x = getNumberFromConsole()
 y = getNumberFromConsole()
 
 sumResult = sumOfTwoNumbers(x,y)
-
 printToConsole(x, y, sumResult, "+")
 
 extractionResult = extractionOfTwoNumbers(x,y)
-
 printToConsole(x, y, extractionResult,  "-")
 
 multiplyResult = multiplicationOfTwoNumbers(x,y)
-
 printToConsole(x, y, multiplyResult, "*")
 
 divisionResult = divisionOfTwoNumbers(x,y)
-
 printToConsole(x, y, divisionResult, "/")
 
