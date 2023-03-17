@@ -1,20 +1,14 @@
-def readFirstWordFromConsole() -> str:
-    firstWord: str = None
+def readWordFromConsole() -> str:
+    word: str = None
+
     
-    while firstWord == None:
+    while word == None:
         print("Kérek egy szót! " , end="")
-        firstWord = input()
+        word = input()
     
-    return firstWord
+    return word
 
-def readSecondWordFromConsole() -> str:
-    secondWord: str = None
 
-    while secondWord == None:    
-        print("Kérek egy másik szót! ", end="")
-        secondWord = input()
 
-    return secondWord
 
-def printWordsToConsole(firstWord: str, secondWord: str) -> None:
-    print()
+    
