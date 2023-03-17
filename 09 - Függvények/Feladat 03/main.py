@@ -1,13 +1,14 @@
-import re
 from consoleIO import *
+from mathFunctions import *
 
-print("Kérem adja meg a nevét: ", end="")
-name = str(input())
+name:str=None
+birthDate:int=None
+date:int=None
+age:int=None
 
-print("Kérem adja meg születési dátumát: ", end="")
-date = str(input())
+name:str=readNameFromConsole()
+birthDate:int=readAgeFromConsole()
+date:int=readDateFromConsole()
 
-age = age(date)
-
-print(f"{name}, ön az idén {age} éves")
-
+age:int=agecalc(birthDate, date)
+printWelcomingMessage(name,age)
